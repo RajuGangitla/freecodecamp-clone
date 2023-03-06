@@ -43,7 +43,6 @@ const AppProvider = ({ children }) => {
         message.error(res.data.message);
       }
     } catch (error) {
-      console.log(error);
       message.error("Something went wrong");
     }
   };
@@ -61,7 +60,6 @@ const AppProvider = ({ children }) => {
         payload: { courses },
       });
     } catch (error) {
-      console.log(error);
       message.error("Something went wrong");
     }
   };

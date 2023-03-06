@@ -41,25 +41,21 @@ const HomePage = () => {
 export default HomePage;
 
 const Wrapper = styled.div`
-  /* Style for the container div */
   max-width: 800px;
   margin: 0 auto;
   text-align: left;
   padding: 20px;
 
-  /* Style for the h1 elements */
   h1 {
     font-size: 48px;
     margin: 20px 0;
   }
 
-  /* Style for the h3 element */
   h3 {
     font-size: 26px;
     margin: 40px 0;
   }
 
-  /* Style for the logo-row container */
   .logo-row {
     display: flex;
     justify-content: space-between;
@@ -67,7 +63,6 @@ const Wrapper = styled.div`
     margin: 40px 0;
   }
 
-  /* Style for the img1 container */
   .img1 {
     margin-right: 20px;
   }

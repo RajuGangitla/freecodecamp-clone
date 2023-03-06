@@ -13,12 +13,12 @@ const Navbar = () => {
             <input type="text" placeholder="Search 9000+playlists" />
             <button>Search</button>
           </div>
-          <div className="nav-middle">
-            <h3 onClick={() => navigate("/")}>freeCodeCamp</h3>
+          <div className="nav-middle" style={{cursor:"pointer"}}>
+            <img onClick={()=>navigate('/')} src="/images/logo.svg" alt="" />
           </div>
           <div className="nav-right">
             <button onClick={user ? logoutUser : () => navigate("/signin")}>
-              {user ? "logout": "Sign in"}
+              {user ? "logout" : "Sign in"}
             </button>
           </div>
         </nav>
@@ -42,6 +42,11 @@ const Wrapper = styled.div`
   .nav-left {
     display: flex;
     align-items: center;
+  }
+
+  img {
+    width: 14rem;
+    height: auto;
   }
 
   .nav-left input[type="text"] {
